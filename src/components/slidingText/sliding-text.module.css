@@ -1,0 +1,29 @@
+.slider {
+    overflow: hidden;
+    padding: 3rem 0;
+    /* background-color: #131313; */
+    
+  }
+  
+  .slideTrack {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+  }
+  
+  .slideContent {
+    display: flex;
+    gap: 1.5rem;
+    animation: slide 15s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  
