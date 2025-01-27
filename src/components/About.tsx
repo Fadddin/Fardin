@@ -36,7 +36,7 @@ export default function About() {
   
     return (
       <section className="min-h-screen bg-[#1A1A1A] p-8 md:p-16">
-        <h1 className="text-[#E2FB30] text-6xl font-bold mb-16">ABOUT</h1>
+        <h1 className="text-[#E2FB30] text-6xl font-bold mb-16 font-bebas">ABOUT</h1>
   
         <div className="grid md:grid-cols-2 gap-12 text-gray-400">
           <div className="text-md leading-relaxed font-mono">

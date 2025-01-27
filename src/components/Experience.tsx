@@ -19,7 +19,7 @@ export default function ExperienceSection() {
   
     return (
       <section className="min-h-screen bg-[#1A1A1A] p-8 md:p-16">
-        <h1 className="text-[#E2FB30] text-6xl font-bold mb-16">EXPERIENCE</h1>
+        <h1 className="text-[#E2FB30] text-6xl font-bold mb-16 font-bebas">EXPERIENCE</h1>
   
         <div className="grid md:grid-cols-1 gap-x-16 gap-y-20 font-mono">
           {experiences.map((experience) => (

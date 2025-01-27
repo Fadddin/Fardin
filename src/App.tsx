@@ -8,12 +8,13 @@ import ExperienceSection from './components/Experience'
 import SlidingText from './components/slidingText/SlidingText'
 import EducationSection from './components/Education'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
     <>
-    {/* <LoadingScreen> */}
+    <LoadingScreen>
       <Navbar/>
       <BigName/>
       <About/>
@@ -22,7 +23,8 @@ function App() {
       <SlidingText/>
       <EducationSection/>
       <Contact/>
-      {/* </LoadingScreen> */}
+      <Footer/>
+      </LoadingScreen>
     </>
   )
 }

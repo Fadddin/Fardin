@@ -44,7 +44,7 @@ export default function ContactSection() {
 
   return (
     <section className="min-h-screen bg-[#1A1A1A] p-8 md:p-16">
-      <h1 className="text-[#E2FB30] text-6xl font-bold mb-16">CONTACT</h1>
+      <h1 className="text-[#E2FB30] text-6xl font-bold mb-16 font-bebas">CONTACT</h1>
 
       <div className="grid md:grid-cols-2 gap-16 font-mono">
         <div className="space-y-8">

@@ -23,7 +23,7 @@ export default function EducationSection() {
   
     return (
       <section className="min-h-screen p-8 md:p-16">
-        <h1 className="text-[#E2FB30] text-6xl font-bold mb-16">EDUCATION</h1>
+        <h1 className="text-[#E2FB30] text-6xl font-bold mb-16 font-bebas">EDUCATION</h1>
   
         <div className="grid md:grid-cols-1 gap-x-16 gap-y-20">
           {education.map((item) => (

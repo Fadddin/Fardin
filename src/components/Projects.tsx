@@ -34,7 +34,7 @@ const projects = [
 export default function Projects() {
   return (
     <section className="min-h-screen p-8 md:p-16 bg-background">
-      <h1 className="text-[#E2FB30] text-6xl font-bold mb-16">PROJECTS</h1>
+      <h1 className="text-[#E2FB30] text-6xl font-bold mb-16 font-bebas">PROJECTS</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 font-mono">
         {projects.map((project) => (

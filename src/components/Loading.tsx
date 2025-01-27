@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, ReactNode } from 'react';
 import { gsap } from 'gsap';
-import { Utensils } from 'lucide-react';
+import { Loader } from 'lucide-react';
 
 interface LoadingScreenProps {
   children: ReactNode;
@@ -21,21 +21,22 @@ export function LoadingScreen({ children }: LoadingScreenProps) {
 
     if (loadingScreen && content) {
       tl.to(loadingScreen, {
-        duration: 0.5,
+        duration: 1,
         scaleY: 0,
         transformOrigin: 'top',
         ease: 'power4.inOut',
-        delay: 2, // Time for loading screen to stay visible
-      }).from(
+        delay: 2, // Duration for the loading screen
+      }).fromTo(
         content,
+        { opacity: 0, y: 50 },
         {
-          duration: 0.5,
-          opacity: 0,
-          y: 50,
+          duration: 1,
+          opacity: 1,
+          y: 0,
           ease: 'power3.out',
           onComplete: () => setIsLoading(false),
         },
-        '-=0.5'
+        '-=0.8'
       );
     }
 
@@ -48,16 +49,23 @@ export function LoadingScreen({ children }: LoadingScreenProps) {
     <>
       <div
         ref={loadingRef}
-        className="fixed inset-0 z-50 flex items-center justify-center bg-primary"
+        className={`fixed inset-0 z-50 flex items-center justify-center bg-[#1A1A1A] ${
+          isLoading ? '' : 'hidden'
+        }`}
       >
         <div className="text-center">
-          <Utensils className="h-16 w-16 text-background animate-bounce" />
-          <h2 className="mt-4 text-2xl font-bold text-background">
-            Loading REMENU
+          <Loader className="h-16 w-16 text-[#E2FB30] animate-spin" />
+          <h2 className="mt-4 text-2xl font-bold font-mono text-[#E2FB30]">
+            Loading FardinKhan.in
           </h2>
         </div>
       </div>
-      <div ref={contentRef} className={isLoading ? 'invisible' : 'visible'}>
+
+      {/* Content */}
+      <div
+        ref={contentRef}
+        className={`transition-opacity duration-500 ${isLoading ? 'hidden' : 'block'}`}
+      >
         {children}
       </div>
     </>
