@@ -1,60 +1,86 @@
+import { ArrowUpRight } from 'lucide-react';
 
+interface Project {
+  title: string;
+  description: string[];
+  link? : string;
+  githubUrl: string;
+}
 
-const projects = [
+const projects: Project[] = [
   {
-    id: 1,
-    image: "/vite.svg",
-    title: "Restaurant Ordering App",
-    description: "A MERN app for QR code-based food ordering.",
-    github: "https://github.com/yourusername/restaurant-ordering-app",
+    title: "Attendy",
+    description: [
+      "An Effective Afttendance tracking app made with NextJs",
+      "It uses MongoDB as its database",
+      "Integrates Firebase for secure authentication so users can sign in with Google"
+    ],
+    link: "https://attendy-omega.vercel.app/",
+    githubUrl: "https://github.com/Fadddin/attendance-tracker"
   },
   {
-    id: 2,
-    image: "/vite.svg",
-    title: "Agricultural Marketplace",
-    description: "Connecting farmers and buyers using React Native.",
-    github: "https://github.com/yourusername/agricultural-marketplace",
-  },
-  {
-    id: 3,
-    image: "/vite.svg",
-    title: "Coding Contest Platform",
-    description: "A platform for hosting coding competitions.",
-    github: "https://github.com/yourusername/coding-contest-platform",
-  },
-  {
-    id: 4,
-    image: "/vite.svg",
-    title: "QR Code Generator",
-    description: "A MERN app to create and manage QR codes.",
-    github: "https://github.com/yourusername/qr-code-generator",
-  },
+    title: "Scalable Code Editor Backend (Microservices Architecture)",
+    description: [
+      "Designed and implemented a microservices-based architecture for scalability and maintainability.",
+      "Built a queue system to efficiently handle simultaneous code submissions.",
+      "Integrated Redis Pub/Sub for seamless communication between services.",
+      "Secured containerized JavaScript code execution using Docker."
+    ],
+    link: "",
+    githubUrl: "https://github.com/Fadddin/BtrCode"
+  }
 ];
 
-export default function Projects() {
+function ProjectCard({ project }: { project: Project }) {
   return (
-    <section className="min-h-screen p-8 md:p-16 bg-background">
-      <h1 className="text-[#E2FB30] text-6xl font-bold mb-16 font-bebas">PROJECTS</h1>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 font-mono">
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            className="bg-[#131313] rounded overflow-hidden hover:shadow-gray-900 hover:shadow-md transition-shadow duration-400 cursor-pointer"
-            onClick={() => window.open(project.github, "_blank")}
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="h-80 w-full object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-2xl font-bold text-gray-300">{project.title}</h2>
-              <p className="text-gray-400 mt-2">{project.description}</p>
-            </div>
-          </div>
-        ))}
+    <div className="bg-[#1A1A1A] rounded-xl p-6 relative group hover:scale-[1.02] transition-transform duration-300">
+      <div className="flex justify-between items-start">
+        <div>
+        <h3 className="text-2xl font-bold text-white mb-4 font-mono">{project.title}</h3>
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-white"
+        >
+          {project.link}
+        </a>
+        </div>
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-400 hover:text-white transition-colors duration-300"
+        >
+          <ArrowUpRight className="w-6 h-6" />
+        </a>
       </div>
-    </section>
+      <ul className="space-y-2 mt-2">
+        {project.description.map((point, index) => (
+          <li key={index} className="text-gray-400 font-mono text-sm">
+            • {point}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
+
+function Project() {
+  return (
+    <div className='py-16 px-4 sm:px-6 lg:px-8'>
+        <h1 className="text-[#E2FB30] text-6xl font-bold mb-16 font-bebas">PROJECTS</h1>
+    <div className=" text-white ">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
+      </div>
+    </div>
+    </div>
+  );
+}
+
+export default Project;
