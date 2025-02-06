@@ -13,7 +13,7 @@ export default function About() {
         {
           name: "MongoDB",
           description: "Database management for scalable apps",
-          percentage: 80,
+          percentage: 90,
         },
         {
           name: "Tailwind CSS",

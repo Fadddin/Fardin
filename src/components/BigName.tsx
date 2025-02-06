@@ -3,7 +3,7 @@ import photo from '/Fardin.jpg';
 const BigName = () => {
   const handleDownloadCV = () => {
     // Replace this URL with the link to your CV file
-    const cvLink = 'https://drive.google.com/file/d/1JHsa5TtpwtIHd7q4MVJB_wXNzP9Jwndr/view?usp=drive_link';
+    const cvLink = 'https://drive.google.com/file/d/1CBIxiAgDVV0Imj7wIJu7mTQTwDRkNBJ2/view?usp=drive_link';
     const link = document.createElement('a');
     link.href = cvLink;
     link.download = 'Fardin_Khan_CV.pdf';

@@ -15,20 +15,20 @@ const Navbar = () => {
   return (
     <div className="text-white px-4 py-4 flex items-center mt-4">
       {/* Menu Icon */}
-      <button className="text-white mr-4 focus:outline-none translate-x-6">
+      {/* <button className="text-white mr-4 focus:outline-none translate-x-6">
         <Menu className="h-8 w-8" />
-      </button>
+      </button> */}
 
       {/* Centered Logo */}
-      <div className="flex-1 flex justify-center translate-x-8">
+      <div className="flex-1 flex justify-center">
         <h1 className="font-marker text-6xl">FK.</h1>
       </div>
 
       {/* Current Time and Date */}
-      <div className="text-right font-mono pr-3 text-sm lg:text-xl">
-        {/* <p>{currentTime.toLocaleDateString()}</p> */}
+      {/* <div className="text-right font-mono pr-3 text-sm lg:text-xl inline sm:none ">
+       
         <p>{currentTime.toLocaleTimeString()}</p>
-      </div>
+      </div> */}
     </div>
   );
 };

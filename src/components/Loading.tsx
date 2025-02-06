@@ -56,7 +56,7 @@ export function LoadingScreen({ children }: LoadingScreenProps) {
         <div className="text-center">
           <Loader className="h-16 w-16 text-[#E2FB30] animate-spin" />
           <h2 className="mt-4 text-2xl font-bold font-mono text-[#E2FB30]">
-            Loading FardinKhan.in
+            Loading PortFolio
           </h2>
         </div>
       </div>

@@ -5,16 +5,22 @@ export default function ExperienceSection() {
         company: "Vrixxa Labs",
         period: "August 2024 — Present",
         description:
-          "Led the redesign of the flagship mobile application, resulting in a increase in user retention within six months. Implemented a streamlined user onboarding process, reducing user drop-offs.",
+          "Developed an LMS with video uploading using React, Node.js, MongoDB. Built a multi-language coding environment, reducing code execution time by 30% through optimized Docker containers and RabbitMQ. Implemented JWT-based authentication, enhancing user data security and reducing unauthorized access attempts."
       },
       {
         title: "Frontend Developer",
         company: "Voolata",
         period: "Jan 2024 — July 2024",
         description:
-          "Collaborated with the development team to implement a responsive design approach, improving the mobile user experience and increasing mobile app engagement.",
+          "Designed responsive UI with React and Tailwind CSS, improving mobile responsiveness and increasing user engagement. Integrated RESTful APIs, reducing data retrieval latency, leading to faster page load times. Collaborated with cross-functional teams to deliver new features, resulting in a growth in daily active users."
       },
-      
+      {
+        title: "Web Developer",
+        company: "TechXetra",
+        period: "Oct 2024 — Nov 2024",
+        description:
+          "Designed UI/UX with Figma and implemented it using React.js and Three.js, attracting over 1,666 verified users within the first month. Optimized website performance using MongoDB, Express.js, and Redis caching, decreasing page load times. Automated data management processes, reducing manual workload for event organizers."
+      },
     ]
   
     return (

@@ -11,9 +11,9 @@ const projects: Project[] = [
   {
     title: "Attendy",
     description: [
-      "An Effective Afttendance tracking app made with NextJs",
-      "It uses MongoDB as its database",
-      "Integrates Firebase for secure authentication so users can sign in with Google"
+      "Built with Next.js, Firebase Auth (Google Sign-In), MongoDB.",
+      "Developed a dynamic subject display feature that automatically adjusts based on the day of the week, improving class organization.",
+      "Added attendance analytics to calculate required classes for maintaining 75% attendance compliance, aiding academic planning."
     ],
     link: "https://attendy-omega.vercel.app/",
     githubUrl: "https://github.com/Fadddin/attendance-tracker"
@@ -21,10 +21,12 @@ const projects: Project[] = [
   {
     title: "Scalable Code Editor Backend (Microservices Architecture)",
     description: [
-      "Designed and implemented a microservices-based architecture for scalability and maintainability.",
-      "Built a queue system to efficiently handle simultaneous code submissions.",
-      "Integrated Redis Pub/Sub for seamless communication between services.",
-      "Secured containerized JavaScript code execution using Docker."
+      "Engineered a scalable coding platform using microservices architecture.",
+      "Developed core services (User, Problem, Submission, Execution) with Node.js, TypeScript.",
+      "Implemented async processing with RabbitMQ, real-time updates via WebSockets, Redis.",
+      "Integrated Monaco Code Editor for an interactive coding environment.",
+      "Tech Stack: MERN (MongoDB, Express.js, React, Node.js), Docker, Redis, RabbitMQ."
+
     ],
     link: "",
     githubUrl: "https://github.com/Fadddin/BtrCode"
