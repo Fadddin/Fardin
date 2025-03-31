@@ -1,4 +1,5 @@
 import photo from '/Fardin.jpg';
+import Button from '../components/Button';
 
 const BigName = () => {
   const handleDownloadCV = () => {
@@ -13,7 +14,7 @@ const BigName = () => {
   return (
     <div className="mt-12 relative">
       <div className="text-slate-400 text-center font-mono">
-        CRAFTING WEBSITES SINCE 2022
+        CRAFTING WEBSITES
       </div>
 
       <div className="relative">
@@ -35,10 +36,11 @@ const BigName = () => {
       <div className="text-black text-center mt-16">
         <button
           onClick={handleDownloadCV}
-          className="bg-[#e5ff3d] px-6 py-4 rounded-full text-black font-bold relative overflow-hidden group"
+          className="font-serif text-xs"
         >
           <span className="absolute inset-0 bg-gradient-to-r from-green-400 via-orange-400 to-yellow-300 blur-lg opacity-0 group-hover:opacity-100 transition duration-500"></span>
-          <span className="relative z-10 font-mono">DOWNLOAD CV</span>
+          {/* <span className="relative z-10 font-mono">DOWNLOAD CV</span> */}
+        <Button/>
         </button>
       </div>
 

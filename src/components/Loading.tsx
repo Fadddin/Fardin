@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, ReactNode } from 'react';
 import { gsap } from 'gsap';
 import { Loader } from 'lucide-react';
+import AnimatedLoader from './LoadingAnimation';
 
 interface LoadingScreenProps {
   children: ReactNode;
@@ -54,7 +55,8 @@ export function LoadingScreen({ children }: LoadingScreenProps) {
         }`}
       >
         <div className="text-center">
-          <Loader className="h-16 w-16 text-[#E2FB30] animate-spin" />
+          {/* <Loader className="h-16 w-16 text-[#E2FB30] animate-spin" /> */}
+          <AnimatedLoader/>
           <h2 className="mt-4 text-2xl font-bold font-mono text-[#E2FB30]">
             Loading PortFolio
           </h2>

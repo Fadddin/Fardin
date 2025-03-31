@@ -1,5 +1,6 @@
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
+import Form from '../components/Form'
 
 export default function ContactSection() {
   const [isLoading, setIsLoading] = useState(false)
@@ -44,6 +45,7 @@ export default function ContactSection() {
 
   return (
     <section className="min-h-screen bg-[#1A1A1A] p-8 md:p-16">
+      
       <h1 className="text-[#E2FB30] text-6xl font-bold mb-16 font-bebas">CONTACT</h1>
 
       <div className="grid md:grid-cols-2 gap-16 font-mono">
@@ -58,12 +60,12 @@ export default function ContactSection() {
             fardinkhan479@gmail.com
             </a>
             <a
-              href="https://www.fardinkhan.in"
+              href="https://www.fardinkhan.site"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#E2FB30] hover:underline block"
             >
-              www.fardinKhan.in
+              www.fardinKhan.site
             </a>
           </div>
         </div>
