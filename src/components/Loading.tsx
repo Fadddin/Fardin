@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState, ReactNode } from 'react';
 import { gsap } from 'gsap';
-import { Loader } from 'lucide-react';
 import AnimatedLoader from './LoadingAnimation';
 
 interface LoadingScreenProps {

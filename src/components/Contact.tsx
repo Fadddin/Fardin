@@ -1,6 +1,5 @@
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
-import Form from '../components/Form'
 
 export default function ContactSection() {
   const [isLoading, setIsLoading] = useState(false)
