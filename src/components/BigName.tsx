@@ -4,7 +4,7 @@ import Button from '../components/Button';
 const BigName = () => {
   const handleDownloadCV = () => {
     // Replace this URL with the link to your CV file
-    const cvLink = 'https://drive.google.com/file/d/1CBIxiAgDVV0Imj7wIJu7mTQTwDRkNBJ2/view?usp=drive_link';
+    const cvLink = 'https://drive.google.com/file/d/1Cul_bhi8aq-8hVNIhEzTVI6a82cRaZwa/view?usp=sharing';
     const link = document.createElement('a');
     link.href = cvLink;
     link.download = 'Fardin_Khan_CV.pdf';
