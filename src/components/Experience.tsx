@@ -1,9 +1,16 @@
 export default function ExperienceSection() {
     const experiences = [
       {
+        title: "Frontend Developer Intern",
+        company: "VideoDubber.ai",
+        period: "April 2025 — Present",
+        description:
+          "Built advanced AI image editing tools using Fabric.js, enabling interactive and intuitive canvas manipulation. Developed an AI-powered image generation and editing feature with seamless user experience. Implementing full-site dark mode using Mantine UI and Tailwind CSS with global theme variables for consistent theming."
+      },
+      {
         title: "Full Stack Intern",
         company: "Vrixxa Labs",
-        period: "August 2024 — Present",
+        period: "August 2024 — March 2025",
         description:
           "Developed an LMS with video uploading using React, Node.js, MongoDB. Built a multi-language coding environment, reducing code execution time by 30% through optimized Docker containers and RabbitMQ. Implemented JWT-based authentication, enhancing user data security and reducing unauthorized access attempts."
       },
