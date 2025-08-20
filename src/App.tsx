@@ -18,6 +18,7 @@ function App() {
       <Navbar/>
       <BigName/>
       <About/>
+      {/* <IconCloud/> */}
       <Projects/>
       <ExperienceSection/>
       <SlidingText/>
